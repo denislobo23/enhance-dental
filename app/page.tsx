@@ -92,40 +92,48 @@ export default function HomePage() {
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {[
-            {
-              title: "Veneers",
-              text: "For patients wanting a whiter, straighter, more polished smile without looking artificial.",
-            },
-            {
-              title: "Dental Implants",
-              text: "For replacing missing teeth with a long-term solution that restores confidence and function.",
-            },
-            {
-              title: "Invisalign",
-              text: "For adults who want straighter teeth without traditional braces.",
-            },
-            {
-              title: "Smile Makeovers",
-              text: "For patients who want a complete plan across whitening, veneers, crowns, or alignment.",
-            },
-            {
-              title: "Teeth Whitening",
-              text: "For patients wanting a brighter smile before weddings, events, or professional moments.",
-            },
-            {
-              title: "Crowns & Restorations",
-              text: "For rebuilding damaged, worn, cracked, or heavily filled teeth.",
-            },
-          ].map((card) => (
-            <div
-              key={card.title}
-              className="rounded-3xl border border-[#e7dfd3] bg-white p-8 shadow-sm"
-            >
-              <h3 className="text-xl font-semibold">{card.title}</h3>
-              <p className="mt-4 leading-7 text-slate-600">{card.text}</p>
-            </div>
-          ))}
+        {[
+  {
+    title: "Veneers",
+    href: "/veneers",
+    text: "For patients wanting a whiter, straighter, more polished smile without looking artificial.",
+  },
+  {
+    title: "Dental Implants",
+    href: "/dental-implants",
+    text: "For replacing missing teeth with a long-term solution that restores confidence and function.",
+  },
+  {
+    title: "Invisalign",
+    href: "/invisalign",
+    text: "For adults who want straighter teeth without traditional braces.",
+  },
+  {
+    title: "Smile Makeovers",
+    href: "/costs-finance",
+    text: "For patients who want a complete plan across whitening, veneers, crowns, or alignment.",
+  },
+  {
+    title: "Teeth Whitening",
+    href: "/costs-finance",
+    text: "For patients wanting a brighter smile before weddings, events, or professional moments.",
+  },
+  {
+    title: "Crowns & Restorations",
+    href: "/costs-finance",
+    text: "For rebuilding damaged, worn, cracked, or heavily filled teeth.",
+  },
+].map((card) => (
+  <a
+    key={card.title}
+    href={card.href}
+    className="rounded-3xl border border-[#e7dfd3] bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+  >
+    <h3 className="text-xl font-semibold">{card.title}</h3>
+
+    <p className="mt-4 leading-7 text-slate-600">{card.text}</p>
+  </a>
+))}
         </div>
       </section>
 
