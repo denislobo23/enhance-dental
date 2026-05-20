@@ -11,7 +11,8 @@ export const metadata = {
 export default function InvisalignPage() {
   return (
     <main className="min-h-screen bg-[#fbfaf7] text-slate-950">
-        <Header />
+      <Header />
+
       {/* HERO */}
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
@@ -248,7 +249,7 @@ export default function InvisalignPage() {
         </div>
       </section>
 
-      {/* INTERNAL LINKS */}
+      {/* RELATED TREATMENT LINKS */}
       <section className="mx-auto max-w-5xl px-6 pb-12">
         <div className="rounded-[2rem] border border-[#d7e7f2] bg-white p-8 shadow-sm">
           <h2 className="text-3xl font-semibold">
@@ -280,6 +281,110 @@ export default function InvisalignPage() {
         </div>
       </section>
 
+      {/* MELBOURNE INVISALIGN LOCATIONS */}
+      <section className="mx-auto max-w-5xl px-6 pb-12">
+        <div className="rounded-[2rem] border border-[#d7e7f2] bg-[#f7fbff] p-8 shadow-sm">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#0b70b7]">
+            Melbourne Invisalign Locations
+          </p>
+
+          <h2 className="mt-4 text-4xl font-semibold tracking-tight">
+            Explore Invisalign consultations across Melbourne
+          </h2>
+
+          <p className="mt-5 max-w-2xl leading-8 text-slate-600">
+            Explore Invisalign consultation information for patients across
+            selected Melbourne suburbs.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a
+              href="/toorak-invisalign"
+              className="rounded-full border border-[#d7e7f2] bg-white px-6 py-3 text-sm font-semibold text-[#0b376d] transition hover:bg-[#eef6ff]"
+            >
+              Toorak Invisalign
+            </a>
+
+            <a
+              href="/brighton-invisalign"
+              className="rounded-full border border-[#d7e7f2] bg-white px-6 py-3 text-sm font-semibold text-[#0b376d] transition hover:bg-[#eef6ff]"
+            >
+              Brighton Invisalign
+            </a>
+
+            <a
+              href="/south-yarra-invisalign"
+              className="rounded-full border border-[#d7e7f2] bg-white px-6 py-3 text-sm font-semibold text-[#0b376d] transition hover:bg-[#eef6ff]"
+            >
+              South Yarra Invisalign
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* INVISALIGN AUTHORITY ARTICLES */}
+      <section className="mx-auto max-w-5xl px-6 pb-12">
+        <div className="rounded-[2rem] border border-[#d7e7f2] bg-white p-8 shadow-sm">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#0b70b7]">
+            Invisalign Advice
+          </p>
+
+          <h2 className="mt-4 text-4xl font-semibold tracking-tight">
+            Learn more about Invisalign
+          </h2>
+
+          <p className="mt-5 max-w-2xl leading-8 text-slate-600">
+            Explore helpful information about Invisalign costs, treatment
+            timelines, clear aligners, braces comparisons, and consultation
+            planning in Melbourne.
+          </p>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <a
+              href="/how-much-is-invisalign-melbourne"
+              className="group rounded-[2rem] border border-[#d7e7f2] bg-[#f7fbff] p-6 transition hover:bg-white hover:shadow-sm"
+            >
+              <p className="text-xl font-semibold text-slate-950 group-hover:text-[#0b376d]">
+                How Much Is Invisalign?
+              </p>
+
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Learn what can influence Invisalign costs, treatment complexity,
+                aligner planning, and payment considerations.
+              </p>
+            </a>
+
+            <a
+              href="/invisalign-vs-braces"
+              className="group rounded-[2rem] border border-[#d7e7f2] bg-[#f7fbff] p-6 transition hover:bg-white hover:shadow-sm"
+            >
+              <p className="text-xl font-semibold text-slate-950 group-hover:text-[#0b376d]">
+                Invisalign vs Braces
+              </p>
+
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Compare clear aligners with traditional braces and understand
+                key treatment differences.
+              </p>
+            </a>
+
+            <a
+              href="/how-long-does-invisalign-take"
+              className="group rounded-[2rem] border border-[#d7e7f2] bg-[#f7fbff] p-6 transition hover:bg-white hover:shadow-sm"
+            >
+              <p className="text-xl font-semibold text-slate-950 group-hover:text-[#0b376d]">
+                How Long Does Invisalign Take?
+              </p>
+
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Understand what can affect Invisalign treatment timelines,
+                aligner wear, refinements, and planning.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ENQUIRY */}
       <section id="invisalign-enquiry" className="bg-white px-6 pb-12 pt-0">
         <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2">
@@ -304,6 +409,8 @@ export default function InvisalignPage() {
             className="rounded-3xl border border-[#e7dfd3] bg-[#fbfaf7] p-8 shadow-sm"
           >
             <input type="hidden" name="page" value="Invisalign Page" />
+            <input type="hidden" name="treatment" value="Invisalign" />
+            <input type="hidden" name="lead_source" value="invisalign-main-page" />
 
             <div className="grid gap-5">
               <input
@@ -331,7 +438,7 @@ export default function InvisalignPage() {
               />
 
               <select
-                name="treatment"
+                name="selected_treatment"
                 required
                 defaultValue="Invisalign"
                 className="rounded-2xl border border-slate-300 bg-white px-4 py-4"
@@ -370,6 +477,7 @@ export default function InvisalignPage() {
           illustrative and are not intended to represent guaranteed outcomes.
         </p>
       </section>
+
       <Footer />
     </main>
   );
