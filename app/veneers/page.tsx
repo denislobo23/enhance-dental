@@ -11,7 +11,8 @@ export const metadata = {
 export default function VeneersPage() {
   return (
     <main className="min-h-screen bg-[#fbfaf7] text-slate-950">
-        <Header />
+      <Header />
+
       {/* HERO */}
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
@@ -315,6 +316,110 @@ export default function VeneersPage() {
         </div>
       </section>
 
+      {/* MELBOURNE VENEERS LOCATIONS */}
+      <section className="mx-auto max-w-5xl px-6 pb-12">
+        <div className="rounded-[2rem] border border-[#d7e7f2] bg-[#f7fbff] p-8 shadow-sm">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#0b70b7]">
+            Melbourne Veneers Locations
+          </p>
+
+          <h2 className="mt-4 text-4xl font-semibold tracking-tight">
+            Explore veneers consultations across Melbourne
+          </h2>
+
+          <p className="mt-5 max-w-2xl leading-8 text-slate-600">
+            Explore cosmetic veneers consultation information for patients
+            across Melbourne’s premium suburbs.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a
+              href="/toorak-veneers"
+              className="rounded-full border border-[#d7e7f2] bg-white px-6 py-3 text-sm font-semibold text-[#0b376d] transition hover:bg-[#eef6ff]"
+            >
+              Toorak Veneers
+            </a>
+
+            <a
+              href="/brighton-veneers"
+              className="rounded-full border border-[#d7e7f2] bg-white px-6 py-3 text-sm font-semibold text-[#0b376d] transition hover:bg-[#eef6ff]"
+            >
+              Brighton Veneers
+            </a>
+
+            <a
+              href="/south-yarra-veneers"
+              className="rounded-full border border-[#d7e7f2] bg-white px-6 py-3 text-sm font-semibold text-[#0b376d] transition hover:bg-[#eef6ff]"
+            >
+              South Yarra Veneers
+            </a>
+
+            <a
+              href="/malvern-veneers"
+              className="rounded-full border border-[#d7e7f2] bg-white px-6 py-3 text-sm font-semibold text-[#0b376d] transition hover:bg-[#eef6ff]"
+            >
+              Malvern Veneers
+            </a>
+
+            <a
+              href="/kew-veneers"
+              className="rounded-full border border-[#d7e7f2] bg-white px-6 py-3 text-sm font-semibold text-[#0b376d] transition hover:bg-[#eef6ff]"
+            >
+              Kew Veneers
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* VENEERS AUTHORITY ARTICLES */}
+      <section className="mx-auto max-w-5xl px-6 pb-12">
+        <div className="rounded-[2rem] border border-[#d7e7f2] bg-white p-8 shadow-sm">
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#0b70b7]">
+            Veneers Advice
+          </p>
+
+          <h2 className="mt-4 text-4xl font-semibold tracking-tight">
+            Learn more about veneers
+          </h2>
+
+          <p className="mt-5 max-w-2xl leading-8 text-slate-600">
+            Explore helpful information about veneer longevity, pricing factors,
+            treatment planning, and cosmetic dentistry considerations in
+            Melbourne.
+          </p>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <a
+              href="/how-long-do-veneers-last"
+              className="group rounded-[2rem] border border-[#d7e7f2] bg-[#f7fbff] p-6 transition hover:bg-white hover:shadow-sm"
+            >
+              <p className="text-xl font-semibold text-slate-950 group-hover:text-[#0b376d]">
+                How Long Do Veneers Last?
+              </p>
+
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Understand the factors that may influence veneer longevity,
+                maintenance, oral care, and long-term treatment planning.
+              </p>
+            </a>
+
+            <a
+              href="/veneers-cost-melbourne"
+              className="group rounded-[2rem] border border-[#d7e7f2] bg-[#f7fbff] p-6 transition hover:bg-white hover:shadow-sm"
+            >
+              <p className="text-xl font-semibold text-slate-950 group-hover:text-[#0b376d]">
+                Veneers Cost Melbourne
+              </p>
+
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Learn about the factors that can affect veneer pricing,
+                consultation planning, materials, and cosmetic treatment options.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* VENEERS ENQUIRY */}
       <section id="veneers-enquiry" className="bg-white px-6 pb-12 pt-0">
         <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2">
@@ -405,8 +510,8 @@ export default function VeneersPage() {
           illustrative and are not intended to represent guaranteed outcomes.
         </p>
       </section>
+
       <Footer />
-</main>
-    
+    </main>
   );
 }
